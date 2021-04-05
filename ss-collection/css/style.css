@@ -19,6 +19,14 @@ main{
     z-index: 30;
 }
 
+.icon{
+    font-size: 38px;
+    color: #707070;
+    top: 28px;
+    right: 125px;
+    position: fixed;
+}
+
   /*  animation
 --------------------------------*/
 @keyframes fade{
@@ -99,10 +107,10 @@ h1{
     font-style: normal;
     letter-spacing: 0.10em;
     font-size: 25px;
-    color: #F2F2F2;
+    color: #707070;
     width: 320px;
     height: 70px; 
-    position: absolute;
+    position: fixed;
     /* top: 50%; */
     top: 2%;
     left: 2%;

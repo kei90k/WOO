@@ -25,6 +25,13 @@ main{
     z-index: 30;
 }
 
+.icon{
+    font-size: 38px;
+    color: #F4F4F4;
+    top: 28px;
+    right: 125px;
+    position: fixed;
+}
 
 
   
@@ -404,8 +411,8 @@ header .nav-list li{
 .ssaw-area{
     width: 100vw;
     height: 120vh;
-    background: url(../img/ssaw_back.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../img/ssaw_back.jpg) no-repeat center bottom;
+    /* background-size: ; */
     position: relative;
     opacity: 0;
     animation-name: fade;
@@ -456,6 +463,10 @@ header .nav-list li{
     0 19.2px 19.8px rgba(0, 0, 0, 0.092),
     0 38.4px 34.8px rgba(0, 0, 0, 0.1),
     0 101px 74px rgba(0, 0, 0, 0.13);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    /* transition-timing-function: ease-in; */
 
 }
 
@@ -619,6 +630,16 @@ header .nav-list li{
     margin-right: 20px;
     overflow: hidden;
 }
+
+.itemimage01{
+    -webkit-transition: all 0.5s ease;
+    transition: all 1s ease;
+}
+
+.itemimage01:hover{
+    border-radius: 15%;
+}
+
 .itemimage01 img{
     width: 100%;
     transition:1s all;
@@ -637,6 +658,16 @@ header .nav-list li{
     margin-bottom: 20px;
     overflow: hidden;
 }
+
+.itemimage02{
+    -webkit-transition: all 0.5s ease;
+    transition: all 1s ease;
+}
+
+.itemimage02:hover{
+    border-radius: 15%;
+}
+
 .itemimage02 img{
     width: 100%;
     transition:1s all;
@@ -654,6 +685,15 @@ header .nav-list li{
     background-size: cover; */
     margin-left: 20px;
     overflow: hidden;
+}
+
+.itemimage03{
+    -webkit-transition: all 0.5s ease;
+    transition: all 1s ease;
+}
+
+.itemimage03:hover{
+    border-radius: 15%;
 }
 
 .itemimage03 img{
