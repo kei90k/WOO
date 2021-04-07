@@ -59,26 +59,59 @@ $(function(){
          {
             $('header .menu-button span').css('background-color', '#707070');
             $('header .icon').css('color', '#707070');
+            $('header .sub-title').css('display', 'block');
+            $('header .sub-title').css('color', '#707070');
          }
          else if(ssawAreaHeight - humHeight < dy && newitemAreaHeight - humHeight > dy)
          {
             $('header .menu-button span').css('background-color', '#f4f4f4');
             $('header .icon').css('color', '#f4f4f4');
+            $('header .sub-title').css('display', 'block');
+            $('header .sub-title').css('color', '#f4f4f4');
          }
          else if(newitemAreaHeight - humHeight < dy)
          {
             $('header .menu-button span').css('background-color', '#707070');$('header .icon').css('color', '#707070');
+            $('header .sub-title').css('display', 'block');
+            $('header .sub-title').css('color', '#707070');
          }
          else
          {
             $('header .menu-button span').css('background-color', '#f4f4f4');
             $('header .icon').css('color', '#f4f4f4');
+            $('header .sub-title').css('display', 'none');
+            $('header .sub-title').css('color', '#f4f4f4');
          }
      });
 
+
+// ___________ページ内リンク____________
+
+
+    $('#navList li a').on('click', function(){
+        // クリックしたhref属性の文字列を取得
+        // $('要素').attr('属性');
+        // 今回の要素は this
+        var link = $(this).attr('href');
+        console.log(link);
+        // 目的のidの高さ取得
+
+        // $('要素').offset().top;
+        var linkPosY = $(link).offset().top;
+
+        // 目的のidまで移動
+        $('html').animate({
+            scrollTop: linkPosY
+        }, 1000);
+
+        // リンクの解除
+      //   return false;
+
+    });
+
+
+
    //   ____________パララックス_________
-
-
 
 
 
@@ -100,9 +133,9 @@ $(function(){
            // 5. header部分の動き(dyに任意の係数を掛け算)
          //   $('.ss-parallax').css('background-position', 'center bottom -' + bgPosition + 'px');
          
-           $('.box1').css('transform', 'translateY(' + dy * 0.15 + 'px)');
+           $('.box1').css('transform', 'translateY(' + dy * 0.12 + 'px)');
 
-           $('.box2').css('transform', 'translateY(' + dy * -0.15 + 'px)');
+           $('.box2').css('transform', 'translateY(' + dy * -0.12 + 'px)');
 
          //   $('.aw-parallax').css('transform', 'translateY(' + dy * -0.02 + 'px)');
        }

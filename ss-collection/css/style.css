@@ -112,8 +112,8 @@ h1{
     height: 70px; 
     position: fixed;
     /* top: 50%; */
-    top: 2%;
-    left: 2%;
+    top: 1.5%;
+    left: 3.2%;
     /* アニメーション */
     opacity: 0;
     animation-name: fade;
