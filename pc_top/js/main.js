@@ -123,7 +123,6 @@ $(function(){
    $(window).on('scroll', function(){
        // 3. スクロール値を変数dyに保存
        var dy = $(this).scrollTop();
-       console.log(dy);
       //  var bgPosition = dy / 2;
       //  console.log(bgPosition);
 
@@ -149,36 +148,9 @@ $(function(){
    });
 
 
-   // // 1. headerタグの高さ取得(変数headerHeight)
-   // var ssawAreaHeight= $('.ss-parallax').offset().top;
-   // console.log('ssaw画像のtop：' + ssawAreaHeight);
-
-   // // 2. スクロールイベント時
-   // $(window).on('scroll', function(){
-   //     // 3. スクロール値を変数dyに保存
-   //     var dy = $(this).scrollTop();
-   //     console.log(dy);
-   //    //  var bgPosition = dy / 2;
-   //    //  console.log(bgPosition);
-
-   //     // 4. スクロール値よりheaderHeightの半分が大きい時（if文）
-   //     if(ssawAreaHeight- $(window).height() < dy)
-   //     {
-   //         // 5. header部分の動き(dyに任意の係数を掛け算)
-   //       //   $('.ss-parallax').css('background-position', 'center bottom -' + bgPosition + 'px');
-         
-   //         $('.ss-parallax').css('transform', 'translateY(' + dy * 0.05 + 'px)');
-
-   //         $('.aw-parallax').css('transform', 'translateY(' + dy * 0.05 + 'px)');
-
-   //       //   $('.aw-parallax').css('transform', 'translateY(' + dy * -0.02 + 'px)');
-   //     }
-   //     // 6. それ以外の時（else文）（スクロール値がheaderHeightの半分を超えた時）
-   //    //  else
-   //    //  {
-   //    //      // 7. play部分の動き(dyに任意の係数を掛け算)
-   //    //      $('.stego').css('transform', 'translateX(' + dy * 0.4 + 'px)');
-   //    //      $('.tirano').css('transform', 'translateX(' + dy * -0.4 + 'px)')
-   //    //  }
-   // });
+   $(window).on('scroll', function(){
+      var dy = $(this).scrollTop();
+      var backgroundPosition = 'top '+dy * 0.2 +'px center';
+      $('#header').css('background-position', backgroundPosition);
+   });
 });
