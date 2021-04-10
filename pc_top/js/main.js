@@ -147,10 +147,31 @@ $(function(){
       //  }
    });
 
+   // _________ヘッダー画像のパララックス_________
 
    $(window).on('scroll', function(){
       var dy = $(this).scrollTop();
       var backgroundPosition = 'top '+dy * 0.2 +'px center';
       $('#header').css('background-position', backgroundPosition);
+   });
+
+   // ___________ssaw画像のパララックス_________
+
+
+   $(window).on('scroll', function(){
+      var dy = $(this).scrollTop();
+      var ssawdy = dy - ssawAreaHeight;
+      if(ssawAreaHeight -$(window).height() < dy)
+      {
+         console.log('砂浜' + ssawAreaHeight)
+
+
+         var backgroundPosition = 'top '+ssawdy * 0.2 +'px center';
+         $('#ssawArea').css('background-position', backgroundPosition);
+         // console.log('dy' + dy * 0.2);
+      // var backgroundPosition = 'top '+dy * 0.2 +'px center';
+      // $('#ssawArea').css('background-position', backgroundPosition);
+      }
+      
    });
 });

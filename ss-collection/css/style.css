@@ -215,16 +215,16 @@ header .menu-button{
     display: block;
     position: fixed; /* 追加 *//* 変更 */
     top: 30px;
-    right: 30px;
+    right: 45px;
     z-index: 51; /* 追加 */
-    width: 60px; /* 追加 */
+    width: 50px; /* 追加 */
     height: 31px; /* 追加 */
 }
 /* 追加 */
 header .menu-button span{
     position: absolute;
-    width: 60px;
-    height: 2.5px;
+    width: 50px;
+    height: 1.3px;
     background-color: #707070;
     border-radius: 0.5px;
     /* トランジション */

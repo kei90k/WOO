@@ -20,6 +20,7 @@
     background-color:rgba(255,255,255,0.5);
     background-blend-mode:lighten;
     background-size: cover;
+    z-index: -10;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     font-size: 1px;
     line-height: 2.5;
     font-family: 'Hiragino Sans W4', sans-serif;
-    background-color: #F4F4F4;
+    /* background-color: #F4F4F4; */
     letter-spacing: 0.5em;
   }
 
@@ -64,7 +65,7 @@ main{
 header{
     width: 100vw;
     height: 100vh;
-    background-color: #F4F4F4;
+    /* background-color: #F4F4F4; */
     position: relative;
 }
 
@@ -235,16 +236,16 @@ header .menu-button{
     display: block;
     position: fixed; /* 追加 *//* 変更 */
     top: 30px;
-    right: 30px;
+    right: 45px;
     z-index: 51; /* 追加 */
-    width: 60px; /* 追加 */
+    width: 50px; /* 追加 */
     height: 31px; /* 追加 */
 }
 /* 追加 */
 header .menu-button span{
     position: absolute;
-    width: 60px;
-    height: 2.5px;
+    width: 50px;
+    height: 1.3px;
     background-color: #707070;
     border-radius: 0.5px;
     /* トランジション */
@@ -337,7 +338,7 @@ header .nav-list li{
 main{
     width: 100vw;
     padding: 150px 0 150px 0;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
 }
 
 main div{
