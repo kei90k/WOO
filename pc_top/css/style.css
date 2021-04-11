@@ -103,7 +103,7 @@ h1{
     font-weight: 300;
     font-style: normal;
     letter-spacing: 0.10em;
-    font-size: 50px;
+    font-size: 55px;
     color: #F2F2F2;
     -webkit-font-smoothing: antialiased; 
     width: 320px;
@@ -802,13 +802,6 @@ footer{
     font-size: 12px;
 }
 
-.icon{
-    font-size: 24px;
-    color: #F4F4F4;
-    top: 28px;
-    right: 95px;
-    position: fixed;
-}
 
 /* ________アニメーション______ */
 
@@ -890,12 +883,13 @@ header{
 header .menu-button{
     width: 40px; /* 追加 */
     height: 25px; /* 追加 */
+    right: 7%;
 }
 /* 追加 */
 header .menu-button span{
     width: 40px;
-    height: 1.5px;
-    border-radius: 0.5px;
+    height: 1px;
+    border-radius: 1px;
     /* トランジション */
     transition-property: all;
     transition-duration: 0.2s;
@@ -934,7 +928,7 @@ header nav{
     top: 0;
     right: 0;
     z-index: 50; /* 追加 */
-    width: 350px;
+    width: 100vw;
     height: 100vh;
     background: #D1BFAA;
     
@@ -1034,7 +1028,7 @@ header .nav-list li{
 .ssaw-area{
     width: 100vw;
     height: 120vh;
-    background: url(../img/ssaw_back.jpg) no-repeat center bottom;
+    background: url(../img/sp_sand.jpg) no-repeat center bottom;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -1250,7 +1244,7 @@ header .nav-list li{
 
     top: 350px;
     left: initial;
-    right: 10px;
+    right: 20px;
     /* right: 300; */
     /* left: 0px; */
     /* margin-top: 350px; */
@@ -1274,7 +1268,7 @@ header .nav-list li{
     position: absolute;
     display: flex;
     right: initial;
-    left: 0;
+    right: 20px;
     top: 660px;
 
 
@@ -1343,7 +1337,7 @@ header .nav-list li{
     height: 280px;
     /* background: url(../img/toppage-new03.jpg) no-repeat center center;
     background-size: cover; */
-    margin-right: -150px;
+    /* margin-right: -150px; */
     overflow: hidden;
     -webkit-transition: all 0.5s ease;
     transition: all 1s ease;
@@ -1372,12 +1366,12 @@ header .nav-list li{
     position: absolute;
     bottom: 80px;
     /* right: 0; */
-    left: 0;
+    right: 20px;
 }
 
 .btn-inner{
-    width: 180px;
-    height: 55px;
+    width: 130px;
+    height: 40px;
     border-width: 0.5px;
     border-style: solid;
     border-color: #707070;
@@ -1388,7 +1382,7 @@ header .nav-list li{
 
 .btn-inner p{
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .btn-inner:hover{
