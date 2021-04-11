@@ -58,27 +58,25 @@ $(function(){
          if(aboutAreaHeight - humHeight < dy && ssawAreaHeight - humHeight > dy)
          {
             $('header .menu-button span').css('background-color', '#707070');
-            $('header .icon').css('color', '#707070');
             $('header .sub-title').css('display', 'block');
             $('header .sub-title').css('color', '#707070');
          }
          else if(ssawAreaHeight - humHeight < dy && newitemAreaHeight - humHeight > dy)
          {
             $('header .menu-button span').css('background-color', '#f4f4f4');
-            $('header .icon').css('color', '#f4f4f4');
+            // $('header .icon').css('color', '#f4f4f4');
             $('header .sub-title').css('display', 'block');
             $('header .sub-title').css('color', '#f4f4f4');
          }
          else if(newitemAreaHeight - humHeight < dy)
          {
-            $('header .menu-button span').css('background-color', '#707070');$('header .icon').css('color', '#707070');
+            $('header .menu-button span').css('background-color', '#707070');
             $('header .sub-title').css('display', 'block');
             $('header .sub-title').css('color', '#707070');
          }
          else
          {
             $('header .menu-button span').css('background-color', '#f4f4f4');
-            $('header .icon').css('color', '#f4f4f4');
             $('header .sub-title').css('display', 'none');
             $('header .sub-title').css('color', '#f4f4f4');
          }
@@ -108,7 +106,6 @@ $(function(){
       //   return false;
 
     });
-
 
 
    //   ____________パララックス_________
@@ -151,7 +148,7 @@ $(function(){
 
    $(window).on('scroll', function(){
       var dy = $(this).scrollTop();
-      var backgroundPosition = 'top '+dy * 0.2 +'px center';
+      var backgroundPosition = 'top '+dy * 0.3 +'px center';
       $('#header').css('background-position', backgroundPosition);
    });
 
@@ -166,7 +163,7 @@ $(function(){
          console.log('砂浜' + ssawAreaHeight)
 
 
-         var backgroundPosition = 'top '+ssawdy * 0.2 +'px center';
+         var backgroundPosition = 'top '+ssawdy * 0.3 +'px center';
          $('#ssawArea').css('background-position', backgroundPosition);
          // console.log('dy' + dy * 0.2);
       // var backgroundPosition = 'top '+dy * 0.2 +'px center';

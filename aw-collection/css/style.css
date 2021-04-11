@@ -16,15 +16,25 @@
     top: 0;
     left: 0;
     
-    background-image:url(../img/aw20top.jpg);
-    background-color:rgba(255,255,255,0.5);
+    background-image:url(../img/artwall.jpg);
+    background-color:rgba(255,255,255,0.1);
     background-blend-mode:lighten;
     background-size: cover;
     z-index: -10;
+
+    /* アニメーション */
+
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 body {
-    color: #707070;
+    color: #f4f4f4;
     font-size: 1px;
     line-height: 2.5;
     font-family: 'Hiragino Sans W4', sans-serif;
@@ -40,13 +50,6 @@ main{
     z-index: 30;
 }
 
-.icon{
-    font-size: 38px;
-    color: #707070;
-    top: 28px;
-    right: 125px;
-    position: fixed;
-}
 
   /*  animation
 --------------------------------*/
@@ -94,8 +97,8 @@ h1{
     /* アニメーション */
     opacity: 0;
     animation-name: fade;
-    animation-duration: 2s;
-    animation-delay: 0;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -128,7 +131,7 @@ h1{
     font-style: normal;
     letter-spacing: 0.10em;
     font-size: 25px;
-    color: #707070;
+    color: #f4f4f4;
     width: 320px;
     height: 70px; 
     position: fixed;
@@ -151,7 +154,7 @@ h1{
 .side-btn01{
     border-width: 0.5px;
     border-style: solid;
-    border-color: #707070;
+    border-color: #f4f4f4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,18 +168,8 @@ h1{
     
 }
 
-.side-btn01:hover{
-    background-color: #D1BFAA;
-    border-color: #707070;
-    color: #F4F4F4;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-delay: 0;
-    transition-timing-function: ease-in;
-}
-
 .side-btn01 p{
-    color: #707070;
+    color: #f4f4f4;
     font-family: 'Hiragino Sans W4', sans-serif;
     letter-spacing: 0.5em;
     margin: 0 auto;
@@ -185,12 +178,24 @@ h1{
     transform-origin: center;
 }
 
+.side-btn01:hover{
+    background-color: #D1BFAA;
+    border-color: #f4f4f4;
+    color: #f4f4f4;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in;
+}
+
+
+
 .side-btn02{
     /* width: 180px;
     height: 55px; */
     border-width: 0.5px;
     border-style: solid;
-    border-color: #707070;
+    border-color: #f4f4f4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +211,7 @@ h1{
 
 .side-btn02 p{
     white-space: nowrap;
-    color: #707070;
+    color: #f4f4f4;
     font-family: 'Hiragino Sans W4', sans-serif;
     letter-spacing: 0.5em;
     margin: 0 auto;
@@ -217,8 +222,8 @@ h1{
 
 .side-btn02:hover{
     background-color: #D1BFAA;
-    border-color: #707070;
-    color: #F4F4F4;
+    border-color: #f4f4f4;
+    color: #f4f4f4;
     transition-property: all;
     transition-duration: 0.3s;
     transition-delay: 0;
@@ -229,7 +234,7 @@ h1{
 ----------------------------- */
 
 header .menu-button span.menu-color{
-    background-color: #707070;
+    background-color: #606060;
 }
 
 header .menu-button{
@@ -245,8 +250,8 @@ header .menu-button{
 header .menu-button span{
     position: absolute;
     width: 50px;
-    height: 1.3px;
-    background-color: #707070;
+    height: 1.5px;
+    background-color: #f4f4f4;
     border-radius: 0.5px;
     /* トランジション */
     transition-property: all;
