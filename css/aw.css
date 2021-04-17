@@ -245,6 +245,7 @@ header .menu-button{
     z-index: 51; /* 追加 */
     width: 50px; /* 追加 */
     height: 31px; /* 追加 */
+    cursor: pointer;
 }
 /* 追加 */
 header .menu-button span{
